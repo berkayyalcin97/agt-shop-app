@@ -20,6 +20,9 @@
 
     <modules>
         <module>customer-service</module>
+        <module>api-gateway</module>
+        <module>config-server</module>
+        <module>discovery-service</module>
     </modules>
 
 </project>

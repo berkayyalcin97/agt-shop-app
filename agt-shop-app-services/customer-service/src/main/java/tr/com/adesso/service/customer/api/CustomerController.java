@@ -10,7 +10,7 @@ import tr.com.adesso.service.customer.service.CustomerService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/customers")
+@RequestMapping("/api/customers")
 @RequiredArgsConstructor
 public class CustomerController {
 
