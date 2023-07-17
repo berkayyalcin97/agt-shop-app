@@ -3,6 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/agt-shop-app-services" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/agt-shop-app-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/agt-shop-app-services/customer-service" vcs="Git" />
   </component>
 </project>

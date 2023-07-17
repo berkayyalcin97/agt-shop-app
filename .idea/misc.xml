@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/agt-shop-app-services/pom.xml" />
+        <option value="$PROJECT_DIR$/agt-shop-app-services/customer-service/pom.xml" />
       </list>
     </option>
   </component>

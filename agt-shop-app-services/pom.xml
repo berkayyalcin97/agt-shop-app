@@ -18,4 +18,8 @@
 
     <packaging>pom</packaging>
 
+    <modules>
+        <module>customer-service</module>
+    </modules>
+
 </project>
