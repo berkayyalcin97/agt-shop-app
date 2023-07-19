@@ -1,5 +1,20 @@
 spring:
   application:
-    name: customers
-  config:
-    import: optional:configserver:http://localhost:8888
+    name: customer-service
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+server:
+  port: 0
+  servlet:
+    context-path: /api/customer-service
+
+
+
+

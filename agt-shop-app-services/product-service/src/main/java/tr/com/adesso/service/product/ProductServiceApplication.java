@@ -1,16 +1,15 @@
-package tr.com.adesso.service.apigateway;
+package tr.com.adesso.service.product;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.web.ServerProperties;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-@SpringBootApplication
 @EnableDiscoveryClient
-public class ApiGatewayApplication {
+@SpringBootApplication
+public class ProductServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ApiGatewayApplication.class, args);
+        SpringApplication.run(ProductServiceApplication.class, args);
     }
 
 }

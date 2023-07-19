@@ -1,7 +1,7 @@
 package tr.com.adesso.service.customer.service;
 
 import org.springframework.stereotype.Service;
-import tr.com.adesso.service.customer.model.CustomerDto;
+import tr.com.adesso.service.customer.dto.CustomerDto;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,10 @@ public class CustomerService {
     }
 
     public CustomerDto getCustomerById(Long id) {
-        return null;
+        CustomerDto customerDto = new CustomerDto();
+        customerDto.setId(2L);
+        customerDto.setFirstName("Test");
+        return customerDto;
     }
     public CustomerDto createCustomer(CustomerDto customerDto) {
 

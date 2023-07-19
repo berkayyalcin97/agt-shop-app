@@ -1,0 +1,36 @@
+GET http://localhost:61759/customers
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-19T202229.200.json
+
+###
+
+GET http://localhost:61716/api/customer-service/customers
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-19T202053.200.json
+
+###
+
+GET http://localhost:59169/api/customer-service/customers
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-19T180239.200.json
+
+###
+
+GET http://localhost:56386/api/customers/customers
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-19T173005.200.json
+
+###
+

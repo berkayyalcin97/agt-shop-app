@@ -8,10 +8,16 @@
         <option value="$PROJECT_DIR$/agt-shop-app-services/pom.xml" />
         <option value="$PROJECT_DIR$/agt-shop-app-services/customer-service/pom.xml" />
         <option value="$PROJECT_DIR$/agt-shop-app-services/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/agt-shop-app-services/product-service/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/agt-shop-app-services/config-server/pom.xml" />
+      </set>
+    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
