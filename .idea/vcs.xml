@@ -6,6 +6,7 @@
     <mapping directory="$PROJECT_DIR$/agt-shop-app-services/api-gateway" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/agt-shop-app-services/customer-service" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/agt-shop-app-services/discovery-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/agt-shop-app-services/order-service" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/agt-shop-app-services/product-service" vcs="Git" />
   </component>
 </project>

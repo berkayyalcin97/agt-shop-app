@@ -31,8 +31,6 @@ public class CustomerService {
 
         return null;
     }
-    //TO-DO
-    //updateCustomer variablelarnı kontrol et
     public CustomerDto updateCustomer(Long id ,CustomerDto customerDto) {
         return null;
     }

@@ -16,6 +16,7 @@
     <name>agt-shop-app-services</name>
     <description>agt-shop-app-services</description>
 
+
     <packaging>pom</packaging>
 
     <modules>
@@ -23,6 +24,7 @@
         <module>api-gateway</module>
         <module>product-service</module>
         <module>customer-service</module>
+        <module>order-service</module>
     </modules>
 
 </project>

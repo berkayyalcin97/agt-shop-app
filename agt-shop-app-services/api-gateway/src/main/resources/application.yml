@@ -7,10 +7,21 @@ spring:
         locator:
           enabled: true
       routes:
+
         - id: customer-service
           uri: lb://customer-service  # Rote da erişmek istediğim yer contex path -> http://localhost:[random port]/api/customer-service/customers
           predicates:
             - Path= /api/customer-service/customers/**  #Bana gelen istekte -> http://localhost:8080/api/customer-service/customers
+
+        - id: product-service
+          uri: lb://product-service
+          predicates:
+            - Path= /api/product-service/products/**  #Bana gelen istekte -> http://localhost:8080/api/customer-service/customers
+
+        - id: order-service
+          uri: lb://order-service
+          predicates:
+            - Path= /api/order-service/orders/**  #Bana gelen istekte -> http://localhost:8080/api/customer-service/customers
 
 eureka:
   instance:
@@ -24,3 +35,4 @@ eureka:
 
 server:
   port: 8080
+

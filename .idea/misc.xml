@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/agt-shop-app-services/customer-service/pom.xml" />
         <option value="$PROJECT_DIR$/agt-shop-app-services/api-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/agt-shop-app-services/product-service/pom.xml" />
+        <option value="$PROJECT_DIR$/agt-shop-app-services/order-service/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
