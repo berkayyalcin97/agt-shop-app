@@ -11,18 +11,23 @@ spring:
         - id: customer-service
           uri: lb://customer-service  # Rote da erişmek istediğim yer contex path -> http://localhost:[random port]/api/customer-service/customers
           predicates:
-            - Path= /api/customer-service/customers/**  #Bana gelen istekte -> http://localhost:8080/api/customer-service/customers
+            - Path= /api/customer-service/**  #Bana gelen istekte -> http://localhost:8080/api/customer-service/customers
+          filters:
+            - RewritePath=/api/customer-service/(?<segment>.*), /api/$\{segment}
 
         - id: product-service
           uri: lb://product-service
           predicates:
-            - Path= /api/product-service/products/**  #Bana gelen istekte -> http://localhost:8080/api/customer-service/customers
+            - Path= /api/product-service/**  #Bana gelen istekte -> http://localhost:8080/api/customer-service/customers
+          filters:
+            - RewritePath=/api/product-service/(?<segment>.*), /api/$\{segment}
 
         - id: order-service
           uri: lb://order-service
           predicates:
-            - Path= /api/order-service/orders/**  #Bana gelen istekte -> http://localhost:8080/api/customer-service/customers
-
+            - Path= /api/order-service/**  #Bana gelen istekte -> http://localhost:8080/api/customer-service/customers
+          filters:
+            - RewritePath=/api/order-service/(?<segment>.*), /api/$\{segment}
 eureka:
   instance:
     prefer-ip-address: true

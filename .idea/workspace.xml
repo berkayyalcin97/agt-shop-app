@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10007b06-67f8-45c2-9bb8-87594d4a23c0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agt-shop-app-services/order-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agt-shop-app-services/order-service/src/main/java/tr/com/adesso/service/order/OrderServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agt-shop-app-services/order-service/src/main/java/tr/com/adesso/service/order/api/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agt-shop-app-services/order-service/src/main/java/tr/com/adesso/service/order/dto/OrderDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agt-shop-app-services/order-service/src/main/java/tr/com/adesso/service/order/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agt-shop-app-services/order-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agt-shop-app-services/order-service/src/test/java/tr/com/adesso/service/order/OrderServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +21,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/agt-shop-app-services/order-service" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -202,6 +191,7 @@
       <workItem from="1689835607758" duration="3857000" />
       <workItem from="1689839498316" duration="2028000" />
       <workItem from="1689842751830" duration="680000" />
+      <workItem from="1690120913039" duration="15730000" />
     </task>
     <servers />
   </component>

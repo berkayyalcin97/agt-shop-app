@@ -13,7 +13,8 @@ eureka:
 server:
   port: 0
   servlet:
-    context-path: /api/order-service
+    context-path: /api
+
 
 
 
