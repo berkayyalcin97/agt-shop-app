@@ -1,0 +1,7 @@
+{
+  "timestamp": "2023-07-25T16:18:08.848+00:00",
+  "path": "/api/customer-service/customers",
+  "status": 500,
+  "error": "Internal Server Error",
+  "requestId": "9b8d625d-30"
+}

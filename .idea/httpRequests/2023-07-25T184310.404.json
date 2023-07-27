@@ -1,0 +1,8 @@
+{
+  "timestamp": "2023-07-25T15:43:10.145+00:00",
+  "path": "/api/customers/customers",
+  "status": 404,
+  "error": "Not Found",
+  "message": null,
+  "requestId": "dfe3636c-1"
+}
