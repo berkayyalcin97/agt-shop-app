@@ -1,43 +1,87 @@
 package tr.com.adesso.service.customer.service;
 
-import org.springframework.stereotype.Service;
-import tr.com.adesso.service.customer.dto.CustomerDto;
 
-import java.util.ArrayList;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+import tr.com.adesso.service.customer.dto.CustomerRequestDto;
+import tr.com.adesso.service.customer.dto.CustomerResponseDto;
+import tr.com.adesso.service.customer.model.Customer;
+import tr.com.adesso.service.customer.repository.CustomerRepository;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.UUID;
+
 
 @Service
+
+@RequiredArgsConstructor
 public class CustomerService {
 
-    ArrayList<CustomerDto> customerDtos = new ArrayList<CustomerDto>();
-    CustomerDto customerDto = new CustomerDto();
-    public List<CustomerDto> getAllCustomers() {
-        customerDto.setId(1L);
-        customerDto.setFirstName("Berkay");
-        customerDto.setLastName("Yalcin");
-        customerDto.setTel("12312312");
+    private final CustomerRepository customerRepository;
 
-        customerDtos.add(customerDto);
-        return customerDtos;
+    public List<CustomerResponseDto> getAllCustomers() {
+        return customerRepository.findAll()
+                .stream().map(customer -> CustomerResponseDto.builder()
+                        .firstName(customer.getFirstName())
+                        .lastName(customer.getLastName())
+                        .birthDate(customer.getBirthDate())
+                        .address(customer.getAddress())
+                        .email(customer.getEmail())
+                        .tel(customer.getTel())
+                        .build()
+                ).toList();
     }
 
-    public CustomerDto getCustomerById(Long id) {
-        CustomerDto customerDto = new CustomerDto();
-        customerDto.setId(2L);
-        customerDto.setFirstName("Test");
-        return customerDto;
-    }
-    public CustomerDto createCustomer(CustomerDto customerDto) {
+    public CustomerResponseDto getCustomerById(UUID id) {
 
-        return null;
-    }
-    public CustomerDto updateCustomer(Long id ,CustomerDto customerDto) {
-        return null;
-    }
-    public CustomerDto deleteCustomer(Long id) {
-        return null;
+        return customerRepository.findById(id).map(customer -> CustomerResponseDto.builder()
+                .firstName(customer.getFirstName())
+                .lastName(customer.getLastName())
+                .birthDate(customer.getBirthDate())
+                .address(customer.getAddress())
+                .email(customer.getEmail())
+                .tel(customer.getTel())
+                .build()
+        ).orElseThrow(null);
+
+        //TODO : Exception Handling in Throw Customer Not Found
     }
 
+    public void createCustomer(CustomerRequestDto customerRequestDto) {
 
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm");
+        String creationDate = LocalDateTime.now().format(dateTimeFormatter);
+
+        Customer customer = Customer.builder()
+                .firstName(customerRequestDto.getFirstName())
+                .lastName(customerRequestDto.getLastName())
+                .birthDate(customerRequestDto.getBirthDate())
+                .creationDate(creationDate)
+                .address(customerRequestDto.getAddress())
+                .email(customerRequestDto.getEmail())
+                .tel(customerRequestDto.getTel())
+                .build();
+
+        customerRepository.save(customer);
+    }
+
+    public void updateCustomer(UUID id, CustomerRequestDto customerRequestDto) {
+
+        Customer existingCustomer = customerRepository.getById(id);
+
+        existingCustomer.setFirstName(customerRequestDto.getFirstName());
+        existingCustomer.setLastName(customerRequestDto.getLastName());
+        existingCustomer.setBirthDate(customerRequestDto.getBirthDate());
+        existingCustomer.setAddress(customerRequestDto.getAddress());
+        existingCustomer.setEmail(customerRequestDto.getEmail());
+        existingCustomer.setTel(customerRequestDto.getTel());
+
+        customerRepository.save(existingCustomer);
+    }
+
+    public void deleteCustomer(UUID id) {
+        customerRepository.deleteById(id);
+    }
 
 }

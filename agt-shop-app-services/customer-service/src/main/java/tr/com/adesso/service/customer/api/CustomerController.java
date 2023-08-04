@@ -1,6 +1,7 @@
 package tr.com.adesso.service.customer.api;
 
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -10,9 +11,11 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import tr.com.adesso.service.customer.dto.CustomerDto;
+import tr.com.adesso.service.customer.dto.CustomerRequestDto;
+import tr.com.adesso.service.customer.dto.CustomerResponseDto;
 import tr.com.adesso.service.customer.service.CustomerService;
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/customers")
@@ -31,7 +34,7 @@ public class CustomerController {
                     @ApiResponse(
                             responseCode = "200",
                             description = "OK.",
-                            content = @Content(schema = @Schema(implementation = CustomerDto.class))),
+                            content = @Content(schema = @Schema(implementation = CustomerRequestDto.class))),
                     @ApiResponse(
                             responseCode = "400",
                             description = "Bad Request."),
@@ -52,7 +55,7 @@ public class CustomerController {
     )
     @LoadBalanced
     @GetMapping
-    public ResponseEntity<List<CustomerDto>> getAllCustomers() {
+    public ResponseEntity<List<CustomerResponseDto>> getAllCustomers() {
         return ResponseEntity.ok(customerService.getAllCustomers());
     }
 
@@ -65,7 +68,7 @@ public class CustomerController {
                     @ApiResponse(
                             responseCode = "200",
                             description = "OK.",
-                            content = @Content(schema = @Schema(implementation = CustomerDto.class))),
+                            content = @Content(schema = @Schema(implementation = CustomerRequestDto.class))),
                     @ApiResponse(
                             responseCode = "400",
                             description = "Bad Request."),
@@ -86,7 +89,7 @@ public class CustomerController {
     )
 
     @GetMapping("/{id}")
-    public ResponseEntity<CustomerDto> getCustomerById(@PathVariable("id") Long id) {
+    public ResponseEntity<CustomerResponseDto> getCustomerById(@PathVariable("id") UUID id) {
         return ResponseEntity.ok(customerService.getCustomerById(id));
     }
 
@@ -94,6 +97,7 @@ public class CustomerController {
             summary = "Create Customer",
             description = "Creates Customer by given Payload"
     )
+
     @ApiResponses(
             value = {
                     @ApiResponse(
@@ -118,8 +122,8 @@ public class CustomerController {
             }
     )
     @PostMapping
-    public ResponseEntity<Void> createCustomer(@RequestBody CustomerDto customerDto) {
-        customerService.createCustomer(customerDto);
+    public ResponseEntity<Void> createCustomer(@RequestBody CustomerRequestDto customerRequestDto) {
+        customerService.createCustomer(customerRequestDto);
         return ResponseEntity.ok().build();
     }
 
@@ -151,7 +155,8 @@ public class CustomerController {
             }
     )
     @PutMapping("/{id}")
-    public ResponseEntity<Void> updateCustomer(@PathVariable("id") Long id, @RequestBody CustomerDto customerDto) {
+    public ResponseEntity<Void> updateCustomer(@PathVariable("id") UUID id, @RequestBody CustomerRequestDto customerRequestDto) {
+        customerService.updateCustomer(id,customerRequestDto);
         return ResponseEntity.ok().build();
     }
 
@@ -183,7 +188,7 @@ public class CustomerController {
             }
     )
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteCustomer(@PathVariable("id") Long id) {
+    public ResponseEntity<Void> deleteCustomer(@PathVariable("id") UUID id) {
         customerService.deleteCustomer(id);
         return ResponseEntity.ok().build();
     }
