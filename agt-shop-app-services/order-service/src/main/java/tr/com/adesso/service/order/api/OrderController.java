@@ -1,6 +1,5 @@
 package tr.com.adesso.service.order.api;
 
-
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -8,19 +7,15 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
-
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import tr.com.adesso.service.order.dto.OrderDto;
 import tr.com.adesso.service.order.service.OrderService;
-
 import java.util.List;
 
 @RestController
 @RequestMapping("/orders")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:8080")
 @Tag(name="v1 - Order APIs",description = "Maintain Order APIs")
 public class OrderController {
 
@@ -54,7 +49,6 @@ public class OrderController {
                             content = @Content(schema = @Schema(implementation = String.class)))
             }
     )
-    @LoadBalanced
     @GetMapping
     public ResponseEntity<List<OrderDto>> getAllOrders() {
 
@@ -89,7 +83,6 @@ public class OrderController {
                             content = @Content(schema = @Schema(implementation = String.class)))
             }
     )
-    @LoadBalanced
     @GetMapping("/{id}")
     public ResponseEntity<OrderDto> getOrderById(@PathVariable("id") Long id) {
 

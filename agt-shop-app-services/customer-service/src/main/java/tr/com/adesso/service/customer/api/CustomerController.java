@@ -17,7 +17,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/customers")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:8080")
 @Tag(name="v1 - Customer APIs",description = "Maintain Customer APIs")
 public class CustomerController {
 
@@ -188,5 +187,4 @@ public class CustomerController {
         customerService.deleteCustomer(id);
         return ResponseEntity.ok().build();
     }
-
 }

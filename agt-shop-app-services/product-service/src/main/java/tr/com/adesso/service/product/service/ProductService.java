@@ -1,41 +1,80 @@
 package tr.com.adesso.service.product.service;
 
+import lombok.Builder;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import tr.com.adesso.service.product.dto.ProductDto;
+import tr.com.adesso.service.product.dto.ProductRequestDto;
+import tr.com.adesso.service.product.dto.ProductResponseDto;
+import tr.com.adesso.service.product.model.Product;
+import tr.com.adesso.service.product.repository.ProductRepository;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 @Service
+@Builder
+@RequiredArgsConstructor
 public class ProductService {
 
+    private final ProductRepository productRepository;
 
-    ArrayList<ProductDto> productDtos = new ArrayList<ProductDto>();
-    ProductDto productDto = new ProductDto();
-    public List<ProductDto> getAllProducts() {
-
-        productDto.setId(1L);
-        productDto.setBrand("Asus");
-        productDto.setName("Wireless Keyboard");
-        productDto.setPrice(1000);
-
-        productDtos.add(productDto);
-        return productDtos;
+    public List<ProductResponseDto> getAllProducts() {
+        return productRepository.findAll()
+                .stream().map(product -> ProductResponseDto.builder()
+                        .id(product.getId())
+                        .name(product.getName())
+                        .brand(product.getBrand())
+                        .model(product.getModel())
+                        .stock(product.getStock())
+                        .price(product.getPrice())
+                        .build()
+                ).toList();
     }
 
-    public ProductDto getProductById(Long id) {
-        return null;
-    }
-    public ProductDto createProduct(ProductDto productDto) {
+    public ProductResponseDto getProductById(UUID id) {
 
-        return null;
+        return productRepository.findById(id).map(product -> ProductResponseDto.builder()
+                .id(product.getId())
+                .name(product.getName())
+                .brand(product.getBrand())
+                .model(product.getModel())
+                .stock(product.getStock())
+                .price(product.getPrice())
+                .build()
+        ).orElseThrow(null);
     }
 
-    public ProductDto updateProduct(Long id , ProductDto productDto) {
-        return null;
+    public void createProduct(ProductRequestDto productRequestDto) {
+        Product product = Product.builder()
+                .name(productRequestDto.getName())
+                .brand(productRequestDto.getBrand())
+                .model(productRequestDto.getModel())
+                .countryOfOrigin(productRequestDto.getCountryOfOrigin())
+                .warranty(productRequestDto.getWarranty())
+                .stock(productRequestDto.getStock())
+                .price(productRequestDto.getPrice()).build();
+
+        productRepository.save(product);
     }
-    public ProductDto deleteProduct(Long id) {
-        return null;
+
+    public void updateProduct(UUID id, ProductRequestDto productRequestDto) {
+
+        Product existingProduct = productRepository.getById(id);
+
+        existingProduct.setName(productRequestDto.getName());
+        existingProduct.setBrand(productRequestDto.getBrand());
+        existingProduct.setModel(productRequestDto.getModel());
+        existingProduct.setCountryOfOrigin(productRequestDto.getCountryOfOrigin());
+        existingProduct.setWarranty(productRequestDto.getWarranty());
+        existingProduct.setStock(productRequestDto.getStock());
+        existingProduct.setPrice(productRequestDto.getPrice());
+
+        productRepository.save(existingProduct);
+
+    }
+
+    public void deleteProduct(UUID id) {
+        productRepository.deleteById(id);
     }
 
 }
