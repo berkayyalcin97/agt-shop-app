@@ -1,41 +1,40 @@
 package tr.com.adesso.service.order.service;
 
+import lombok.RequiredArgsConstructor;
+import org.aspectj.weaver.ast.Or;
 import org.springframework.stereotype.Service;
-import tr.com.adesso.service.order.dto.OrderDto;
+import tr.com.adesso.service.order.dto.OrderRequestDto;
+import tr.com.adesso.service.order.model.Order;
+import tr.com.adesso.service.order.repository.OrderRepository;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class OrderService {
 
-    List<OrderDto> orderDtos = new ArrayList<OrderDto>();
-    OrderDto orderDto = new OrderDto();
-    public List<OrderDto> getAllOrders(){
+    private final OrderRepository orderRepository;
 
-        orderDto.setId(1L);
-        orderDto.setCustomerId(2L);
+    public List<OrderRequestDto> getAllOrders(){
 
-        orderDtos.add(orderDto);
-        return orderDtos;
-    }
-
-    public OrderDto getOrderById(Long id) {
-        OrderDto orderDto = new OrderDto();
-        orderDto.setId(5L);
-        orderDto.setOrderPrice(9999.7f);
-        return orderDto;
-    }
-
-    public OrderDto createOrder(OrderDto order) {
 
         return null;
     }
 
-    public OrderDto updateOrder(Long id , OrderDto orderDto) {
+    public OrderRequestDto getOrderById(Long id) {
+
         return null;
     }
-    public OrderDto deleteOrder(Long id) {
+
+    public OrderRequestDto createOrder(OrderRequestDto orderRequestDto) {
+
+       return null;
+    }
+
+    public OrderRequestDto updateOrder(Long id , OrderRequestDto orderRequestDto) {
+        return null;
+    }
+    public OrderRequestDto deleteOrder(Long id) {
         return null;
     }
 

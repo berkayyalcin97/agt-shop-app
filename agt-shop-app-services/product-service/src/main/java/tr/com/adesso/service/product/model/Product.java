@@ -1,9 +1,6 @@
 package tr.com.adesso.service.product.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
@@ -24,11 +21,30 @@ public class Product {
     @GeneratedValue(generator = "uuid2")
     @GenericGenerator(name = "uuid2", strategy = "org.hibernate.id.UUIDGenerator")
     private UUID id;
+
+    @Column(
+            nullable = false,
+            unique = true
+    )
     private String name;
+    @Column(
+            nullable = false,
+            unique = true
+    )
     private String brand;
+    @Column(
+            nullable = false,
+            unique = true
+    )
     private String model;
     private String countryOfOrigin;
     private String warranty;
+    @Column(
+            nullable = false
+    )
     private int stock;
+    @Column(
+            nullable = false
+    )
     private float price;
 }

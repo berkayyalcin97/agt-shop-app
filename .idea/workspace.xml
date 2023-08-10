@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10007b06-67f8-45c2-9bb8-87594d4a23c0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/agt_shop_db.Nlz76g/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/agt_shop_db.Nlz76g/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/order_db.D_-RSQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/order_db.D_-RSQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/public.abK9xQ.meta" afterDir="false" />
@@ -45,38 +50,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/agt-shop-app&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;f940a254ea6e574f80da60ae9b9bf1b9&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "C:/Projects/agt-shop-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "spring.configuration.checksum": "f940a254ea6e574f80da60ae9b9bf1b9",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="tr.com.adesso.service.customer.api" />
@@ -95,7 +100,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DiscoveryServiceApplication">
+  <component name="RunManager" selected="HTTP Request.generated-requests | #2">
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -186,9 +191,9 @@
       <item itemvalue="Spring Boot.OrderServiceApplication" />
       <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.CustomerServiceApplication-Test" />
+      <item itemvalue="Spring Boot.CustomerServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
-      <item itemvalue="Spring Boot.CustomerServiceApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -240,7 +245,17 @@
       <workItem from="1690994673070" duration="311000" />
       <workItem from="1691050336074" duration="14412000" />
       <workItem from="1691073092724" duration="4501000" />
-      <workItem from="1691142491946" duration="10550000" />
+      <workItem from="1691142491946" duration="11257000" />
+      <workItem from="1691161143401" duration="3667000" />
+      <workItem from="1691240498285" duration="777000" />
+      <workItem from="1691333200886" duration="1014000" />
+      <workItem from="1691343031849" duration="8720000" />
+      <workItem from="1691405884188" duration="4306000" />
+      <workItem from="1691482629111" duration="8105000" />
+      <workItem from="1691504518898" duration="436000" />
+      <workItem from="1691504962738" duration="812000" />
+      <workItem from="1691505877931" duration="12344000" />
+      <workItem from="1691652747806" duration="690000" />
     </task>
     <servers />
   </component>

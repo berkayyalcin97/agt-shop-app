@@ -9,7 +9,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import tr.com.adesso.service.order.dto.OrderDto;
+import tr.com.adesso.service.order.dto.OrderRequestDto;
 import tr.com.adesso.service.order.service.OrderService;
 import java.util.List;
 
@@ -30,7 +30,7 @@ public class OrderController {
                     @ApiResponse(
                             responseCode = "200",
                             description = "OK.",
-                            content = @Content(schema = @Schema(implementation = OrderDto.class))),
+                            content = @Content(schema = @Schema(implementation = OrderRequestDto.class))),
                     @ApiResponse(
                             responseCode = "400",
                             description = "Bad Request."),
@@ -50,7 +50,7 @@ public class OrderController {
             }
     )
     @GetMapping
-    public ResponseEntity<List<OrderDto>> getAllOrders() {
+    public ResponseEntity<List<OrderRequestDto>> getAllOrders() {
 
         return ResponseEntity.ok(orderService.getAllOrders());
     }
@@ -64,7 +64,7 @@ public class OrderController {
                     @ApiResponse(
                             responseCode = "200",
                             description = "OK.",
-                            content = @Content(schema = @Schema(implementation = OrderDto.class))),
+                            content = @Content(schema = @Schema(implementation = OrderRequestDto.class))),
                     @ApiResponse(
                             responseCode = "400",
                             description = "Bad Request."),
@@ -84,7 +84,7 @@ public class OrderController {
             }
     )
     @GetMapping("/{id}")
-    public ResponseEntity<OrderDto> getOrderById(@PathVariable("id") Long id) {
+    public ResponseEntity<OrderRequestDto> getOrderById(@PathVariable("id") Long id) {
 
         return ResponseEntity.ok(orderService.getOrderById(id));
     }
@@ -117,8 +117,8 @@ public class OrderController {
             }
     )
     @PostMapping
-    public ResponseEntity<Void> createOrder(@RequestBody OrderDto orderDto) {
-        orderService.createOrder(orderDto);
+    public ResponseEntity<Void> createOrder(@RequestBody OrderRequestDto orderRequestDto) {
+        orderService.createOrder(orderRequestDto);
         return ResponseEntity.ok().build();
     }
 
@@ -150,8 +150,8 @@ public class OrderController {
             }
     )
     @PutMapping("/{id}")
-    public ResponseEntity<OrderDto> updateOrder(@PathVariable("id") Long id, @RequestBody OrderDto orderDto) {
-        return ResponseEntity.ok(orderService.updateOrder(id, orderDto));
+    public ResponseEntity<OrderRequestDto> updateOrder(@PathVariable("id") Long id, @RequestBody OrderRequestDto orderRequestDto) {
+        return ResponseEntity.ok(orderService.updateOrder(id, orderRequestDto));
     }
 
     @Operation(

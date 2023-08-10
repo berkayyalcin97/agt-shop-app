@@ -1,16 +1,11 @@
 package tr.com.adesso.service.customer.model;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.UUID;
 
 @Entity
@@ -22,19 +17,30 @@ import java.util.UUID;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class Customer {
 
     @Id
     @GeneratedValue(generator = "uuid2")
     @GenericGenerator(name = "uuid2", strategy = "org.hibernate.id.UUIDGenerator")
-
     private UUID id;
+
+    @Column(
+            nullable = false,
+            columnDefinition = "Text"
+    )
     private String firstName;
     private String lastName;
     private String birthDate;
     private String creationDate;
     private String address;
+    @Column(
+            nullable = false,
+            unique = true
+    )
     private String email;
+    @Column(
+            nullable = false,
+            unique = true
+    )
     private String tel;
 }
