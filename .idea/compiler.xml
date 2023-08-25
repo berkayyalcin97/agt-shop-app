@@ -13,7 +13,7 @@
         <module name="customer-service" />
         <module name="discovery-service" />
       </profile>
-      <profile name="Disabled" />
+      <profile name="Disabled" enabled="true" />
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-server" target="17" />

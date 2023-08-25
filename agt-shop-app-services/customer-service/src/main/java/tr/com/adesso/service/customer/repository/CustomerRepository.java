@@ -5,4 +5,5 @@ import tr.com.adesso.service.customer.model.Customer;
 import java.util.UUID;
 
 public interface CustomerRepository extends JpaRepository<Customer, UUID> {
+
 }

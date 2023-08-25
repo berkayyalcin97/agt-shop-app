@@ -14,7 +14,6 @@ public class ProductResponseDto {
     private UUID id;
     private String name;
     private String brand;
-    private String model;
     private int stock;
     private float price;
 }

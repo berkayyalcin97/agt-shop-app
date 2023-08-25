@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 public class ProductRequestDto {
     private String name;
     private String brand;
-    private String model;
     private String countryOfOrigin;
     private String warranty;
     private int stock;

@@ -13,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import tr.com.adesso.service.customer.dto.CustomerRequestDto;
 import tr.com.adesso.service.customer.dto.CustomerResponseDto;
+import tr.com.adesso.service.customer.model.Customer;
 import tr.com.adesso.service.customer.service.CustomerService;
 import java.util.List;
 import java.util.UUID;

@@ -22,28 +22,13 @@ public class CustomerService {
 
     public List<CustomerResponseDto> getAllCustomers() {
         return customerRepository.findAll()
-                .stream().map(customer -> CustomerResponseDto.builder()
-                        .firstName(customer.getFirstName())
-                        .lastName(customer.getLastName())
-                        .birthDate(customer.getBirthDate())
-                        .address(customer.getAddress())
-                        .email(customer.getEmail())
-                        .tel(customer.getTel())
-                        .build()
-                ).toList();
+                .stream().map(this::mapCustomerToCustomerResponse).toList();
     }
 
     public CustomerResponseDto getCustomerById(UUID id) {
 
-        return customerRepository.findById(id).map(customer -> CustomerResponseDto.builder()
-                .firstName(customer.getFirstName())
-                .lastName(customer.getLastName())
-                .birthDate(customer.getBirthDate())
-                .address(customer.getAddress())
-                .email(customer.getEmail())
-                .tel(customer.getTel())
-                .build()
-        ).orElseThrow(null);
+        return customerRepository.findById(id).map(this::mapCustomerToCustomerResponse)
+                .orElseThrow(null);
 
         //TODO : Exception Handling in Throw Customer Not Found
     }
@@ -84,4 +69,15 @@ public class CustomerService {
         customerRepository.deleteById(id);
     }
 
+    public CustomerResponseDto mapCustomerToCustomerResponse(Customer customer){
+
+        return CustomerResponseDto.builder()
+                .firstName(customer.getFirstName())
+                .lastName(customer.getLastName())
+                .birthDate(customer.getBirthDate())
+                .address(customer.getAddress())
+                .email(customer.getEmail())
+                .tel(customer.getTel())
+                .build();
+    }
 }

@@ -24,7 +24,6 @@ public class ProductService {
                         .id(product.getId())
                         .name(product.getName())
                         .brand(product.getBrand())
-                        .model(product.getModel())
                         .stock(product.getStock())
                         .price(product.getPrice())
                         .build()
@@ -37,7 +36,6 @@ public class ProductService {
                 .id(product.getId())
                 .name(product.getName())
                 .brand(product.getBrand())
-                .model(product.getModel())
                 .stock(product.getStock())
                 .price(product.getPrice())
                 .build()
@@ -49,7 +47,6 @@ public class ProductService {
         Product product = Product.builder()
                 .name(productRequestDto.getName())
                 .brand(productRequestDto.getBrand())
-                .model(productRequestDto.getModel())
                 .countryOfOrigin(productRequestDto.getCountryOfOrigin())
                 .warranty(productRequestDto.getWarranty())
                 .stock(productRequestDto.getStock())
@@ -64,7 +61,6 @@ public class ProductService {
 
         existingProduct.setName(productRequestDto.getName());
         existingProduct.setBrand(productRequestDto.getBrand());
-        existingProduct.setModel(productRequestDto.getModel());
         existingProduct.setCountryOfOrigin(productRequestDto.getCountryOfOrigin());
         existingProduct.setWarranty(productRequestDto.getWarranty());
         existingProduct.setStock(productRequestDto.getStock());

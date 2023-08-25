@@ -3,9 +3,6 @@ package tr.com.adesso.service.order.model;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
-import tr.com.adesso.service.customer.model.Customer;
-
-import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -23,7 +20,6 @@ public class Order {
     @GeneratedValue(generator = "uuid2")
     @GenericGenerator(name = "uuid2", strategy = "org.hibernate.id.UUIDGenerator")
     private UUID id;
-
     private String creationDate;
     private float orderPrice;
 

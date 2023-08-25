@@ -1,20 +1,25 @@
 package tr.com.adesso.service.product.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
+import java.util.List;
 import java.util.UUID;
 
 @Entity
 @Data
-@Table(name = "products")
 @Getter
 @Setter
 @ToString
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "product",uniqueConstraints = {
+        @UniqueConstraint(columnNames = {"name", "brand"})
+})
 public class Product {
 
     @Id
@@ -22,29 +27,35 @@ public class Product {
     @GenericGenerator(name = "uuid2", strategy = "org.hibernate.id.UUIDGenerator")
     private UUID id;
 
-    @Column(
-            nullable = false,
-            unique = true
-    )
+    @NotNull
+    @NotBlank
+    @Column(name = "name")
     private String name;
-    @Column(
-            nullable = false,
-            unique = true
-    )
+
+    @NotNull
+    @NotBlank
+    @Column(name = "brand")
     private String brand;
-    @Column(
-            nullable = false,
-            unique = true
-    )
-    private String model;
+
+    @NotNull
+    @NotBlank
+    @Column(name = "country_of_origin")
     private String countryOfOrigin;
+
+    @Column(name="warranty")
     private String warranty;
-    @Column(
-            nullable = false
-    )
+
+    @NotNull
+    @Column(name = "stock")
     private int stock;
-    @Column(
-            nullable = false
-    )
+
+    @Column(name = "price")
     private float price;
+
+    @OneToMany(mappedBy = "product")
+    private List<Image> images;
+
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
 }
