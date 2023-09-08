@@ -6,12 +6,21 @@ spring:
     username: postgres
     password: rootroot
   jpa:
+    #    hibernate:
+    #      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgresPlusDialect
-    hibernate:
-      ddl-auto: update
+#    properties:
+#      javax:
+#        persistence:
+#          schema-generation:
+#            scripts:
+#              action: drop-and-create
+#              drop-target: generated/ddl/${spring.application.name}/drop-scripts.sql
+#              create-target: generated/ddl/${spring.application.name}/create-scripts.sql
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
 
 eureka:
   instance:

@@ -5,23 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10007b06-67f8-45c2-9bb8-87594d4a23c0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/agt_shop_db.Nlz76g/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/agt_shop_db.Nlz76g/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/order_db.D_-RSQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/order_db.D_-RSQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/order_db.D_-RSQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/order_db.D_-RSQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/order_db.D_-RSQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/order_db.D_-RSQ/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/order_db.D_-RSQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/order_db.D_-RSQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/agt_shop_db.Nlz76g.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/agt_shop_db.Nlz76g/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/agt_shop_db.Nlz76g/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/agt_shop_db.Nlz76g/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/customer_db.f3xglg/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/order_db.D_-RSQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/order_db.D_-RSQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/order_db.D_-RSQ/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/order_db.D_-RSQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/order_db.D_-RSQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/order_db.D_-RSQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1646ecfd-a118-4d59-b9dc-9485524de580/storage_v2/_src_/database/product_db.zsl8aA/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +50,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/agt-shop-app-services/api-gateway/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -50,9 +60,12 @@
     <option name="ignoreImplicitObjects" value="true" />
     <option name="ignoreSourceCode" value="false" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2SVVsxd9oWCKFIHIlfOkH4iib8u" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -72,7 +85,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/Tutorial-Projects/javabrains-microservices-course&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects/agt-shop-app/agt-shop-app-services/order-service/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -81,7 +94,8 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;f940a254ea6e574f80da60ae9b9bf1b9&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -94,6 +108,14 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="tr.com.adesso.service.customer.api" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\agt-shop-app\agt-shop-app-services\order-service\src\main\resources" />
+      <recent name="C:\Projects\agt-shop-app\agt-shop-app-services\customer-service\src\main\resources" />
+      <recent name="C:\Projects\agt-shop-app\agt-shop-app-services\product-service\src\main\resources\db\migration" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\agt-shop-app\agt-shop-app-services\customer-service\src\main\resources\db" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -109,7 +131,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
+  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -295,7 +317,18 @@
       <workItem from="1692360690846" duration="2102000" />
       <workItem from="1692533293005" duration="31000" />
       <workItem from="1692607396209" duration="16000" />
-      <workItem from="1692948927608" duration="5650000" />
+      <workItem from="1692948927608" duration="7734000" />
+      <workItem from="1693485642179" duration="604000" />
+      <workItem from="1693549555647" duration="749000" />
+      <workItem from="1693575260301" duration="1665000" />
+      <workItem from="1693899329644" duration="3125000" />
+      <workItem from="1693913711933" duration="5323000" />
+      <workItem from="1693940629518" duration="2298000" />
+      <workItem from="1693987528952" duration="4345000" />
+      <workItem from="1694171749389" duration="2000" />
+      <workItem from="1694174264711" duration="551000" />
+      <workItem from="1694174830491" duration="684000" />
+      <workItem from="1694175561300" duration="1231000" />
     </task>
     <servers />
   </component>

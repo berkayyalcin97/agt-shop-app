@@ -6,6 +6,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -27,4 +28,6 @@ public class Category {
     @NotNull
     @NotBlank
     private String name;
+
+
 }
